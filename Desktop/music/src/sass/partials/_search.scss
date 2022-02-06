@@ -1,0 +1,38 @@
+.search{
+  margin-top: 100px;
+
+  .search-form{
+    #search{
+      width: 360px;
+      height: 60px;
+      border-radius: 5px;
+      border: 0;
+    }
+
+    label{
+      font-size: 25px;
+      letter-spacing: 5px;
+      color: $color-3;
+      font-weight: $font-semibold;
+    }
+
+    button{
+      margin-left: 30px;
+      width: 140px;
+      height: 60px;
+      border-radius: 5px;
+      border: 0;
+      background-color: $color-1;
+      font-size: 15px;
+      letter-spacing: 3px;
+      color: $color-2;
+      font-weight: $font-semibold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .found{
+    margin-top: 50px;
+  }
+}

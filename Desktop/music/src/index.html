@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container-header">
+      <div class="hero-gradient">
+        <div class="hero">
+          <h1>TASTE</h1>
+          <h2>ENGAGE<br>IN<br>ART</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <nav class="navigation">
+      <ol>
+        <li><a href="#home" class="">Home</a></li>
+        <li><a href="#search" class="">Serch</a></li>
+        <li><a href="#discovery" class="">Discovery</a></li>
+      </ol>
+    </nav>
+
+    <!--start home page-->
+    <section class="home disable-view">
+    </section>
+    <!--end home page-->
+
+    <!--start serch page-->
+    <section class="search disable-view">
+      <div class="search-title">
+        <h1>Search</h1>
+      </div>
+      <div class="search-form">
+        <label for="saerch">Name</label>
+        <input id="search" type="text">
+        <button type="button">Search</button>
+      </div>
+      <div class="found">
+        <h2>We have found <span>0</span> songs...</h2>
+      </div>
+    </section>
+    <!--end serch page-->
+
+    <!--start discover page-->
+    <section class="discovery disable-view">
+      <div class="discover-title">
+        <h1>discover</h1>
+      </div>
+      <div class="discover-subtitle">
+        <h2>Give it a try!</h2>
+      </div>
+    </section>
+    <!--end discover page-->
+    <div class="music">
+    </div>
+  </div>
+
+  <div class="subscribe">
+    <h1>Subscribe<span> NOW</span></h1>
+    <div class="row">
+      <div class="join">
+        <a href="#join">join now</a>
+      </div>
+      <div class="album">
+        <div class="album-foto">
+          <p>Dean</p>
+          <p>Hen<span>son</span></p>
+          <p>New album</p>
+          <p>Avalible only for subscribes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>All rights reserved!</p>
+  </div>
+
+  <script id="template-player" type="text/x-handlebars-template">
+    <div class="player">
+      <div class="title">
+        <p>{{ author }} - {{ title }}</p>
+      </div>
+      <div class="gap">
+        <audio>
+            <source src="songs/{{ source }}" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="description">
+        <div class="category">Categories: {{ categories }}</div>
+        <div class="ranking">#{{ ranking }} in the ranking</div>
+      </div>
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

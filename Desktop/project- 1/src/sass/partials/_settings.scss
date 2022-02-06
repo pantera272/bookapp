@@ -1,0 +1,23 @@
+/*variables */
+$color-1: #cf383e;
+$color-2: #fff;
+$color-3: #bfbfbf;
+$color-4: #131313;
+
+$font: 'Source Sans Pro', sans-serif;
+
+$font-black: 900;
+$font-semibold: 600;
+$font-bold: 700;
+$font-regular: 400;
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.disable-view{
+  display: none;
+}

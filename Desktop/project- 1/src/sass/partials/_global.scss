@@ -1,0 +1,18 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: $font-regular;
+  color: $color-2;
+  background-color: $color-4;
+  text-align: center;
+}
+
+.container{
+  max-width: 700px;
+  margin: auto;
+}

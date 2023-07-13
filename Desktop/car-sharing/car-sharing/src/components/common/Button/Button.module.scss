@@ -1,0 +1,45 @@
+@import '../../../styles/settings.scss';
+
+.button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  border-style: solid;
+  background-color: $color-two;
+  color: $color-one;
+  font-size: 18px;
+  font-weight: 700;
+  border-width: 3px;
+  transition: color 500ms, background-color 500ms;
+
+  .text {
+    margin-left: 0px;
+    transition: margin-left 1s;
+  }
+
+  .icon {
+    color: $color-three;
+    position: absolute;
+    left: 50px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: margin-top 300ms, opacity 300ms;
+  }
+
+  &:hover {
+    color: $color-two;
+    background-color: $color-one;
+
+    .text {
+      margin-left: 30px;
+    }
+
+    .icon {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+}
+

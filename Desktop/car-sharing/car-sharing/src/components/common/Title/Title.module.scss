@@ -1,0 +1,29 @@
+@import './../../../styles/settings.scss';
+
+.title {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.title {
+  position: relative;
+  font-family: $font-title;
+  font-size: 100px;
+  letter-spacing: 8px;
+
+  span {
+    font-family: $font-title;
+    font-size: 38px;
+    letter-spacing: 4px;
+    color: $color-three;
+    font-weight: bold;
+    position: absolute;
+    top: 69px;
+    left: 137px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+

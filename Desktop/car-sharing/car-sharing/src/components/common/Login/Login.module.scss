@@ -1,0 +1,27 @@
+@import './../../../styles/settings.scss';
+
+.container {
+  color: white;
+  width: 250px;
+  height: 400px;
+  background-color: $color-three-rgba;
+  border-radius: 30px;
+  margin-left: 70%;
+  margin-top: 300px;
+  position: absolute;
+
+  p {
+    font-size: 20px;
+    color: $color-one;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  input {
+    padding: 5px 20px;
+    height: 30px;
+    width: 190px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+}
